@@ -1,0 +1,38 @@
+.form-container {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.from-element {
+  padding: 30px;
+  background-color: aquamarine;
+}
+.from-element input,
+select {
+  background-color: rgb(164, 168, 167);
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+  color: aliceblue;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.from-element button {
+  width: 100px;
+  padding: 10px;
+  border-style: none;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(30, 29, 119);
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.from-element button:hover {
+  background-color: rgb(94, 94, 148);
+  /* scale: 1.02; */
+}

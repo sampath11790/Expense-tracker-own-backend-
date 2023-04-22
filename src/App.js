@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useContext } from "react";
+import "./App.css";
+import ExpenseList from "./component/ExpenseList/ExpenseList";
+import ExpenseContext from "./Store/Expensecontext";
 
 function App() {
+  const ctx = useContext(ExpenseContext);
+  useEffect(() => {
+    ctx.getExpense();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ExpenseList></ExpenseList>
     </div>
   );
 }

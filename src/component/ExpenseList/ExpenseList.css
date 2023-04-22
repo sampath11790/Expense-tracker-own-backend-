@@ -1,0 +1,39 @@
+.expense_container {
+  width: inherit;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense_Ul {
+  list-style: none;
+  margin: 20px;
+}
+.expense_Ul li {
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  color: rgb(68, 23, 109);
+}
+.expense_container p {
+  padding: 5px;
+  margin: 5px;
+  font-size: 28px;
+  color: rgb(68, 23, 109);
+}
+.expense_Ul li button {
+  border-style: none;
+  padding: 8px;
+  color: rgb(7, 42, 71);
+  margin-left: 8px;
+  background-color: rgb(206, 219, 21);
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.expense_Ul li button:hover {
+  background-color: gold;
+  scale: 1.04;
+}
